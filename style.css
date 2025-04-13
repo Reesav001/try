@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-section {
+section.bg {
   height: 100vh;
-  background-image: url(IMG_20250219_175517.jpg);
+  background-image: url(pic1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -92,4 +92,109 @@ button {
   background: green;
   color: white;
   cursor: pointer;
+}
+
+.second {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 25px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 250px;
+}
+.left img {
+  position: absolute;
+  border-radius: 70px;
+  border: 10px solid white;
+}
+
+.left .firstimg {
+  width: 200px;
+  height: 350px;
+  left: 10px;
+  object-fit: cover;
+}
+
+.left .secondimg {
+  width: 150px;
+  height: 250px;
+  left: 170px;
+  top: 90px;
+  object-fit: cover;
+}
+
+.left .thirdimg {
+  width: 150px;
+  height: 250px;
+  left: 270px;
+  top: -10px;
+  object-fit: cover;
+}
+.right {
+  height: 100%;
+  width: 100%;
+  padding-left: 250px;
+  padding-right: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.right p {
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.destination {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination p {
+  font-style: oblique;
+  color: green;
+}
+
+.Destination p {
+  font-style: oblique;
+}
+
+.gridBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.imageBox {
+  height: 400px;
+  width: 23%;
+  padding: 20px 0px 15px;
+  margin-top: 1rem;
+}
+
+.box-img {
+  height: 300px;
+  background-size: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
